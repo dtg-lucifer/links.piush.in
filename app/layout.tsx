@@ -1,7 +1,7 @@
 import type React from "react";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Geist_Mono } from "next/font/google";
+import { Geist_Mono, Space_Grotesk } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 
@@ -25,6 +25,12 @@ const geistMono = Geist_Mono({
 	display: "swap",
 	variable: "--font-geist-mono",
 });
+
+const spaceGrotesk = Space_Grotesk({
+    subsets: ["latin"],
+    display: "swap",
+    variable: "--font-space-grotesk",
+})
 
 const siteUrl = new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://piush.in");
 const canonicalUrl = new URL("/", siteUrl);
@@ -102,7 +108,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en" suppressHydrationWarning className={`${lilex.variable} ${geistMono.variable} dark`}>
+		<html lang="en" suppressHydrationWarning className={`${spaceGrotesk.variable} ${lilex.variable} ${geistMono.variable} dark`}>
 			<body className="font-sans antialiased">
 				<ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
 					{children}

@@ -326,12 +326,12 @@ export default function Page() {
 							</span>
 						</div>
 
-						<h1 className="font-light text-foreground leading-none tracking-tight">
-							<span className="block text-4xl sm:text-5xl lg:text-6xl">
-								<GlitchText text="PIUSH" delay={100} />
+						<h1 className="font-light text-foreground leading-none tracking-tight" style={{ fontFamily: "var(--font-space-grotesk" }}>
+							<span className="block text-5xl sm:text-6xl lg:text-7xl">
+								<GlitchText text="PIUSH" delay={100} className="bold-text" />
 							</span>
-							<span className="block text-muted-foreground text-4xl sm:text-5xl lg:text-6xl">
-								<GlitchText text="BOSE" delay={400} />
+							<span className="block text-muted-foreground text-5xl sm:text-6xl lg:text-7xl">
+								<GlitchText text="BOSE" delay={400} className="hollow-text" />
 							</span>
 						</h1>
 
