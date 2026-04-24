@@ -130,8 +130,8 @@ const links = [
 	{
 		id: "instagram",
 		label: "Instagram",
-		sublabel: "@piush.bose",
-		url: "https://www.instagram.com/piush.bose",
+		sublabel: "@namespace_piush",
+		url: "https://www.instagram.com/namespace_piush",
 		tag: "07",
 		accent: "#f472b6",
 		icon: (
